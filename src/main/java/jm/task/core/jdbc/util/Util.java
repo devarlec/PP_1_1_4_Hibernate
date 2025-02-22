@@ -8,7 +8,7 @@ public class Util {
     public static final String USER_TABLE_NAME = "pizzafb";
 
     // Connect to MySQL
-    private static Configuration configuration = new Configuration().addAnnotatedClass(User.class);
+    private final static Configuration configuration = new Configuration().addAnnotatedClass(User.class);
 
     public static SessionFactory getSessionFactory() {
 
